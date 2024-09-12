@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2024/09/12/hello-world/"/>
+      <url>/2024/09/12/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Markdown语法的学习</title>
+      <link href="/2023/09/26/Markdown%E8%AF%AD%E6%B3%95%E7%9A%84%E5%AD%A6%E4%B9%A0/"/>
+      <url>/2023/09/26/Markdown%E8%AF%AD%E6%B3%95%E7%9A%84%E5%AD%A6%E4%B9%A0/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>此界面用来学习</p></blockquote><h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><p><a href="#Markdown%E8%AF%AD%E6%B3%95">Markdown语法</a></p><p><a href="#hexo%E4%BD%BF%E7%94%A8">hexo使用</a></p><h2 id="Markdown语法"><a href="#Markdown语法" class="headerlink" title="Markdown语法"></a>Markdown语法</h2><p>Markdown也是一种文本标记语言</p><ul><li><p>标题</p><p>支持6级以<code>#</code> 进行标记</p></li><li><p>换行</p><p>在一行的末尾添加两个或多个空格，然后按回车键,即可创建一个换行</p></li><li><p>链接</p><p><code>[超链接显示名](超链接地址 &quot;超链接title&quot;)</code></p><p><code>![图片alt](图片链接 &quot;图片title&quot;)</code></p><p>示例见下</p><blockquote><p><a href="http://zeroink-l.github.io/">我的博客</a><br><img src="https://hexo.io/icon/favicon-196x196.png" alt="图片"></p></blockquote></li><li><p>列表</p><p>无需列表和有序列表分别用<code>*</code>和<code>1.</code>来表示</p><blockquote><ul><li>这是无需列表的示例</li></ul><ol><li>这是有序列表的示例</li></ol></blockquote></li><li><p>任务</p><blockquote><ul><li><input disabled="" type="checkbox"> 未完成</li><li><input checked="" disabled="" type="checkbox"> 已完成</li></ul><p><strong>已完成中间是英文字母x</strong></p></blockquote></li><li><p>着重</p><p>着重符用<code>*斜体着重文字*</code>和<code>**加粗着重文字**</code>或<code>~~删除着重文字~~</code></p><blockquote><p><em>这是斜体</em></p><p><strong>这是加粗</strong></p><p><del>这是删除</del></p></blockquote></li><li><p>分割线</p><p>要创建分隔线，在单独一行上使用三个或多个破折号—</p><blockquote><hr></blockquote></li><li><p>数学公式</p><p>使用<code>$ 数学公式 $</code>，是使用LaTeX语法</p><blockquote><p>$ \sum_{i&#x3D;1}^n i &#x3D; \frac{n(n+1)}{2} $</p></blockquote></li><li><p>代码</p><p>代码用`hello world&#96;或`&#96;&#96;hello world&#96;&#96;&#96;</p><p>二者区别在于行内代码和围栏代码，后者更易读并支持语法高亮</p><blockquote><p><code>println!(hello world);</code></p><figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">println!</span> (hello world);</span><br></pre></td></tr></table></figure></blockquote></li><li><p>表格</p><p>这个比较复杂，用｜｜和—-，也可用:，::，:进行对齐方式的改变</p><blockquote><table><thead><tr><th align="left">表头1</th><th align="center">表头2</th><th align="right">表头3</th></tr></thead><tbody><tr><td align="left">右对齐文字</td><td align="center">居中对齐文字</td><td align="right">左对齐文字</td></tr></tbody></table></blockquote></li><li><p>表情符合</p><p>支持Emoji表情<code>:表情代码:</code>；<a href="http://www.webpagefx.com/tools/emoji-cheat-sheet/">更多的表情符号请参考</a></p><blockquote><p>😀</p><p>:grinning_face:<br>U+1F600</p></blockquote></li><li><p>锚点</p><p>来标记文档特定位置，语法问<code>[锚点描述](#锚点名)</code>。具体使用参见目录</p></li></ul><h2 id="hexo使用"><a href="#hexo使用" class="headerlink" title="hexo使用"></a>hexo使用</h2><ol><li><p>文章的创建</p><p>使用<code>hexo new [布局] &lt;文章标题&gt;</code>新建文章</p><blockquote><table><thead><tr><th align="center">布局</th><th align="center">说明</th><th align="center">存放路径</th></tr></thead><tbody><tr><td align="center">页面</td><td align="center">导航栏上的栏目</td><td align="center">source</td></tr><tr><td align="center">草稿</td><td align="center">还未完成</td><td align="center">source</td></tr><tr><td align="center">文章</td><td align="center">用于发布的文章</td><td align="center">source&#x2F;_posts</td></tr></tbody></table></blockquote></li><li><p>模版</p><p>使用指定模版hexo new [模版名] &lt;文章名&gt;</p><p>Hexo提供三种写作模版，对应三种布局。这三种模版存放在scffolds</p><p>使用-包围的叫Front-matter；使用双括号<code>&#123;&#123;&#125;&#125;</code>的是Hexo自动生成</p></li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 学习 </tag>
+            
+            <tag> 测试 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>RSS的问题</title>
+      <link href="/2023/06/01/RSS%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+      <url>/2023/06/01/RSS%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<h4 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h4><ol><li><p>部署完成后，登陆正常但无法进入主页，弹出错误窗口</p><p> Fatal error</p><p> E_URL_SCHEME_MISMATCH</p><p> URL scheme reported by your browser (https) doesn’t match server-configured SELF_URL_PATH (http), check X-Forwarded-Proto.</p><p> Additional information</p><p> <img src="/images/3796699070.png" alt="image"></p></li></ol><h4 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h4><ol><li><p>访问地址与在部署时所配置的地址不一致，而导致系统将其认为入侵</p><p> SELF_URL_PATH$\ne$CLIENT_LOCATION</p></li></ol><h4 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h4><ol><li><p>更改<code>SELF_URL_PATH</code>的地址，来适配</p></li><li><p>在<code>/var/www/</code>目录下的<code>config.php</code>文件中输入<code>$_SERVER[&#39;HTTP_X_FORWARDED_PROTO&#39;] = &#39;https&#39;;</code></p><p> 让系统认为是https，解决了http和https中间的问题</p></li><li><p>在<code>/var/www/</code>目录下的<code>config.php</code>文件中输入<code>define(&#39;_SKIP_SELF_URL_PATH_CHECKS&#39;, true);</code></p><p> 让系统忽略地址的检查，解决不同地址的访问</p></li></ol><p>参考：</p><blockquote><ol><li><a href="https://community.tt-rss.org/t/ssl-load-balancer-and-docker/4757">SSL, load balancer, and docker</a></li><li><a href="https://community.tt-rss.org/t/solved-self-url-path-for-host-with-two-hostnames/2198">[SOLVED] SELF_URL_PATH for host with two hostnames?</a></li><li><a href="https://community.tt-rss.org/t/unable-to-set-my-domain-as-ttrss-self-url-path/5701">Unable to set my domain as TTRSS_SELF_URL_PATH</a></li></ol></blockquote>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 学习 </tag>
+            
+            <tag> RSS </tag>
+            
+            <tag> TTRSS </tag>
+            
+            <tag> Docker </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="此界面用来学习  目录Markdown语法 hexo使用 Markdown语法Markdown也是一种文本标记语言  标题 支持6级以# 进行标记  换行 在一行的末尾添加两个或多个空格，然后按回车键,即可创建一个换行  链接 [超链接显示名](超链接地址 &quot;超链接title&quot;) ![图片alt](图片链接 &quot;图片title&quot;) 示例见下  我的博客">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown语法的学习">
+<meta property="og:url" content="https://www.zeroink.vip/2023/09/26/Markdown%E8%AF%AD%E6%B3%95%E7%9A%84%E5%AD%A6%E4%B9%A0/index.html">
+<meta property="og:site_name" content="墨得见闻录">
+<meta property="og:description" content="此界面用来学习  目录Markdown语法 hexo使用 Markdown语法Markdown也是一种文本标记语言  标题 支持6级以# 进行标记  换行 在一行的末尾添加两个或多个空格，然后按回车键,即可创建一个换行  链接 [超链接显示名](超链接地址 &quot;超链接title&quot;) ![图片alt](图片链接 &quot;图片title&quot;) 示例见下  我的博客">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://hexo.io/icon/favicon-196x196.png">
+<meta property="article:published_time" content="2023-09-26T09:19:27.000Z">
+<meta property="article:modified_time" content="2024-09-12T12:01:36.786Z">
+<meta property="article:author" content="znhe">
+<meta property="article:tag" content="学习">
+<meta property="article:tag" content="测试">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://hexo.io/icon/favicon-196x196.png">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>Markdown语法的学习</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="目录"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="目录"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="顶部" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">首页</a></li><!--
+     --><!--
+       --><li><a href="/about/">关于</a></li><!--
+     --><!--
+       --><li><a href="/archives/">归档</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="http://github.com/ZeroInk-L">项目</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="上一篇" href="/2024/09/12/hello-world/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="下一篇" href="/2023/06/01/RSS%E7%9A%84%E9%97%AE%E9%A2%98/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="返回顶部" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="分享文章" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">上一篇</span>
+      <span id="i-next" class="info" style="display:none;">下一篇</span>
+      <span id="i-top" class="info" style="display:none;">返回顶部</span>
+      <span id="i-share" class="info" style="display:none;">分享文章</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://www.zeroink.vip/2023/09/26/Markdown%E8%AF%AD%E6%B3%95%E7%9A%84%E5%AD%A6%E4%B9%A0/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://www.zeroink.vip/2023/09/26/Markdown%E8%AF%AD%E6%B3%95%E7%9A%84%E5%AD%A6%E4%B9%A0/&text=Markdown语法的学习"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://www.zeroink.vip/2023/09/26/Markdown%E8%AF%AD%E6%B3%95%E7%9A%84%E5%AD%A6%E4%B9%A0/&title=Markdown语法的学习"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://www.zeroink.vip/2023/09/26/Markdown%E8%AF%AD%E6%B3%95%E7%9A%84%E5%AD%A6%E4%B9%A0/&is_video=false&description=Markdown语法的学习"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Markdown语法的学习&body=Check out this article: https://www.zeroink.vip/2023/09/26/Markdown%E8%AF%AD%E6%B3%95%E7%9A%84%E5%AD%A6%E4%B9%A0/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://www.zeroink.vip/2023/09/26/Markdown%E8%AF%AD%E6%B3%95%E7%9A%84%E5%AD%A6%E4%B9%A0/&title=Markdown语法的学习"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://www.zeroink.vip/2023/09/26/Markdown%E8%AF%AD%E6%B3%95%E7%9A%84%E5%AD%A6%E4%B9%A0/&title=Markdown语法的学习"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://www.zeroink.vip/2023/09/26/Markdown%E8%AF%AD%E6%B3%95%E7%9A%84%E5%AD%A6%E4%B9%A0/&title=Markdown语法的学习"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://www.zeroink.vip/2023/09/26/Markdown%E8%AF%AD%E6%B3%95%E7%9A%84%E5%AD%A6%E4%B9%A0/&title=Markdown语法的学习"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://www.zeroink.vip/2023/09/26/Markdown%E8%AF%AD%E6%B3%95%E7%9A%84%E5%AD%A6%E4%B9%A0/&name=Markdown语法的学习&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://www.zeroink.vip/2023/09/26/Markdown%E8%AF%AD%E6%B3%95%E7%9A%84%E5%AD%A6%E4%B9%A0/&t=Markdown语法的学习"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95"><span class="toc-number">1.</span> <span class="toc-text">目录</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Markdown%E8%AF%AD%E6%B3%95"><span class="toc-number">1.1.</span> <span class="toc-text">Markdown语法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo%E4%BD%BF%E7%94%A8"><span class="toc-number">1.2.</span> <span class="toc-text">hexo使用</span></a></li></ol></li></ol>
+      </div>
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        Markdown语法的学习
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">znhe</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2023-09-26T09:19:27.000Z" class="dt-published" itemprop="datePublished">2023-09-26</time>
+        
+        (Updated: <time datetime="2024-09-12T12:01:36.786Z" class="dt-updated" itemprop="dateModified">2024-09-12</time>)
+        
+      
+    </div>
+
+
+      
+
+      
+    <div class="article-tag">
+        <i class="fa-solid fa-tag"></i>
+        <a class="p-category" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a>, <a class="p-category" href="/tags/%E6%B5%8B%E8%AF%95/" rel="tag">测试</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content e-content" itemprop="articleBody">
+    <blockquote>
+<p>此界面用来学习</p>
+</blockquote>
+<h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><p><a href="#Markdown%E8%AF%AD%E6%B3%95">Markdown语法</a></p>
+<p><a href="#hexo%E4%BD%BF%E7%94%A8">hexo使用</a></p>
+<h2 id="Markdown语法"><a href="#Markdown语法" class="headerlink" title="Markdown语法"></a>Markdown语法</h2><p>Markdown也是一种文本标记语言</p>
+<ul>
+<li><p>标题</p>
+<p>支持6级以<code>#</code> 进行标记</p>
+</li>
+<li><p>换行</p>
+<p>在一行的末尾添加两个或多个空格，然后按回车键,即可创建一个换行</p>
+</li>
+<li><p>链接</p>
+<p><code>[超链接显示名](超链接地址 &quot;超链接title&quot;)</code></p>
+<p><code>![图片alt](图片链接 &quot;图片title&quot;)</code></p>
+<p>示例见下</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="http://zeroink-l.github.io/">我的博客</a><br><img src="https://hexo.io/icon/favicon-196x196.png" alt="图片"></p>
+</blockquote>
+</li>
+<li><p>列表</p>
+<p>无需列表和有序列表分别用<code>*</code>和<code>1.</code>来表示</p>
+<blockquote>
+<ul>
+<li>这是无需列表的示例</li>
+</ul>
+<ol>
+<li>这是有序列表的示例</li>
+</ol>
+</blockquote>
+</li>
+<li><p>任务</p>
+<blockquote>
+<ul>
+<li><input disabled="" type="checkbox"> 未完成</li>
+<li><input checked="" disabled="" type="checkbox"> 已完成</li>
+</ul>
+<p><strong>已完成中间是英文字母x</strong></p>
+</blockquote>
+</li>
+<li><p>着重</p>
+<p>着重符用<code>*斜体着重文字*</code>和<code>**加粗着重文字**</code>或<code>~~删除着重文字~~</code></p>
+<blockquote>
+<p><em>这是斜体</em></p>
+<p><strong>这是加粗</strong></p>
+<p><del>这是删除</del></p>
+</blockquote>
+</li>
+<li><p>分割线</p>
+<p>要创建分隔线，在单独一行上使用三个或多个破折号—</p>
+<blockquote>
+<hr>
+</blockquote>
+</li>
+<li><p>数学公式</p>
+<p>使用<code>$ 数学公式 $</code>，是使用LaTeX语法</p>
+<blockquote>
+<p>$ \sum_{i&#x3D;1}^n i &#x3D; \frac{n(n+1)}{2} $</p>
+</blockquote>
+</li>
+<li><p>代码</p>
+<p>代码用`hello world&#96;或`&#96;&#96;hello world&#96;&#96;&#96;</p>
+<p>二者区别在于行内代码和围栏代码，后者更易读并支持语法高亮</p>
+<blockquote>
+<p><code>println!(hello world);</code></p>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">println!</span> (hello world);</span><br></pre></td></tr></table></figure>
+</blockquote>
+</li>
+<li><p>表格</p>
+<p>这个比较复杂，用｜｜和—-，也可用:，::，:进行对齐方式的改变</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th align="left">表头1</th>
+<th align="center">表头2</th>
+<th align="right">表头3</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">右对齐文字</td>
+<td align="center">居中对齐文字</td>
+<td align="right">左对齐文字</td>
+</tr>
+</tbody></table>
+</blockquote>
+</li>
+<li><p>表情符合</p>
+<p>支持Emoji表情<code>:表情代码:</code>；<a target="_blank" rel="noopener" href="http://www.webpagefx.com/tools/emoji-cheat-sheet/">更多的表情符号请参考</a></p>
+<blockquote>
+<p>😀</p>
+<p>:grinning_face:<br>U+1F600</p>
+</blockquote>
+</li>
+<li><p>锚点</p>
+<p>来标记文档特定位置，语法问<code>[锚点描述](#锚点名)</code>。具体使用参见目录</p>
+</li>
+</ul>
+<h2 id="hexo使用"><a href="#hexo使用" class="headerlink" title="hexo使用"></a>hexo使用</h2><ol>
+<li><p>文章的创建</p>
+<p>使用<code>hexo new [布局] &lt;文章标题&gt;</code>新建文章</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th align="center">布局</th>
+<th align="center">说明</th>
+<th align="center">存放路径</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">页面</td>
+<td align="center">导航栏上的栏目</td>
+<td align="center">source</td>
+</tr>
+<tr>
+<td align="center">草稿</td>
+<td align="center">还未完成</td>
+<td align="center">source</td>
+</tr>
+<tr>
+<td align="center">文章</td>
+<td align="center">用于发布的文章</td>
+<td align="center">source&#x2F;_posts</td>
+</tr>
+</tbody></table>
+</blockquote>
+</li>
+<li><p>模版</p>
+<p>使用指定模版hexo new [模版名] &lt;文章名&gt;</p>
+<p>Hexo提供三种写作模版，对应三种布局。这三种模版存放在scffolds</p>
+<p>使用-包围的叫Front-matter；使用双括号<code>&#123;&#123;&#125;&#125;</code>的是Hexo自动生成</p>
+</li>
+</ol>
+
+  </div>
+</article>
+
+    <div class="blog-post-comments">
+        <div id="disqus_thread">
+            <noscript>加载评论需要在浏览器启用 JavaScript 脚本支持。</noscript>
+        </div>
+    </div>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">首页</a></li>
+        
+          <li><a href="/about/">关于</a></li>
+        
+          <li><a href="/archives/">归档</a></li>
+        
+          <li><a target="_blank" rel="noopener" href="http://github.com/ZeroInk-L">项目</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95"><span class="toc-number">1.</span> <span class="toc-text">目录</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Markdown%E8%AF%AD%E6%B3%95"><span class="toc-number">1.1.</span> <span class="toc-text">Markdown语法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo%E4%BD%BF%E7%94%A8"><span class="toc-number">1.2.</span> <span class="toc-text">hexo使用</span></a></li></ol></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://www.zeroink.vip/2023/09/26/Markdown%E8%AF%AD%E6%B3%95%E7%9A%84%E5%AD%A6%E4%B9%A0/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://www.zeroink.vip/2023/09/26/Markdown%E8%AF%AD%E6%B3%95%E7%9A%84%E5%AD%A6%E4%B9%A0/&text=Markdown语法的学习"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://www.zeroink.vip/2023/09/26/Markdown%E8%AF%AD%E6%B3%95%E7%9A%84%E5%AD%A6%E4%B9%A0/&title=Markdown语法的学习"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://www.zeroink.vip/2023/09/26/Markdown%E8%AF%AD%E6%B3%95%E7%9A%84%E5%AD%A6%E4%B9%A0/&is_video=false&description=Markdown语法的学习"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Markdown语法的学习&body=Check out this article: https://www.zeroink.vip/2023/09/26/Markdown%E8%AF%AD%E6%B3%95%E7%9A%84%E5%AD%A6%E4%B9%A0/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://www.zeroink.vip/2023/09/26/Markdown%E8%AF%AD%E6%B3%95%E7%9A%84%E5%AD%A6%E4%B9%A0/&title=Markdown语法的学习"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://www.zeroink.vip/2023/09/26/Markdown%E8%AF%AD%E6%B3%95%E7%9A%84%E5%AD%A6%E4%B9%A0/&title=Markdown语法的学习"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://www.zeroink.vip/2023/09/26/Markdown%E8%AF%AD%E6%B3%95%E7%9A%84%E5%AD%A6%E4%B9%A0/&title=Markdown语法的学习"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://www.zeroink.vip/2023/09/26/Markdown%E8%AF%AD%E6%B3%95%E7%9A%84%E5%AD%A6%E4%B9%A0/&title=Markdown语法的学习"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://www.zeroink.vip/2023/09/26/Markdown%E8%AF%AD%E6%B3%95%E7%9A%84%E5%AD%A6%E4%B9%A0/&name=Markdown语法的学习&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://www.zeroink.vip/2023/09/26/Markdown%E8%AF%AD%E6%B3%95%E7%9A%84%E5%AD%A6%E4%B9%A0/&t=Markdown语法的学习"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> 菜单</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> 目录</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> 分享</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> 返回顶部</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2023-2024
+    znhe
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">首页</a></li><!--
+     --><!--
+       --><li><a href="/about/">关于</a></li><!--
+     --><!--
+       --><li><a href="/archives/">归档</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="http://github.com/ZeroInk-L">项目</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"复制到粘贴板！\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "复制成功！");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+    <script type="text/javascript">
+        var disqus_shortname = 'znhe';
+
+        (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        }());
+    </script>
+
+<!-- utterances Comments -->
+
+</body>
+</html>
